@@ -386,13 +386,13 @@
             // Обновление активного пункта меню
             document.querySelectorAll('.context-menu-item').forEach(item => {
                 item.addEventListener('click', function() {
-                    // Убираем активный класс у всех пунктов
+                    
                     document.querySelectorAll('.context-menu-item').forEach(i => {
                         i.classList.remove('active');
                     });
-                    // Добавляем активный класс к текущему пункту
+                    
                     this.classList.add('active');
-                    // Закрываем меню после клика
+                   
                     document.getElementById('contextMenu').classList.remove('show');
                 });
             });
