@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Products</title>
+	<link href="../css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="../css/styles.css">
+</head>
+<body>
+	<!-- Шапка сайта -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <div class="navbar-brand d-flex align-items-center">
+    			<img src="../images/label.png" alt="Галактика" class="me-2">
+    			<a href="../index.html" class="fw-bold text-decoration-none text-white">ГАЛАКТИКА</a>
+			</div>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://galaktika.ru/?ysclid=mhaj4ts298452292586">Официальный сайт</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://galaktika.ru/partners">Партнерам</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://galaktika.ru/uslugi">Заказчикам</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://sem.galaktika.ru/">Семинары</a>
+                    </li>
+                </ul>
+                
+                <!-- Кнопка входа/регистрации -->
+                <button class="btn btn-outline-light login-modal-btn" type="button" data-bs-toggle="modal" data-bs-target="#loginModal">
+                    Вход / Регистрация
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Заголовок страницы -->
+    <header class="hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-8">
+                    <h1 class="display-4 fw-bold">КАТАЛОГ ПРОДУКТОВ</h1>
+                    <p class="lead">Комплексные решения для автоматизации управления предприятиями</p>
+                </div>
+                <!-- <div class="col-md-4 text-center">
+                    <img src="../images/label.png" alt="Галактика" class="img-fluid" style="max-height: 150px;">
+                </div> -->
+            </div>
+        </div>
+    </header>
+
+    <!-- Основное содержимое -->
+    <main class="container">
+        <div class="row">
+            <!-- Колонка с меню -->
+            <div class="col-lg-3 mb-4">
+                <div class="menu-column">
+                    <!-- Кнопка для открытия контекстного меню -->
+                    <button class="context-menu-btn" onclick="toggleContextMenu()">
+                        <div class="hamburger-icon">
+                            <div class="hamburger-line"></div>
+                            <div class="hamburger-line"></div>
+                            <div class="hamburger-line"></div>
+                        </div>
+                    </button>
+
+                    <!-- Контекстное меню -->
+                    <div class="context-menu" id="contextMenu">
+                        <div class="context-menu-header">Навигация</div>
+                        <a href="../index.html" class="context-menu-item">Главная</a>
+                        <a href="page1.html" class="context-menu-item">О нас</a>
+                        <a href="page2.html" class="context-menu-item active">Каталог</a>
+                        <a href="page3.html" class="context-menu-item">Контакты</a>
+                        <a href="reviews.html" class="context-menu-item">Отзывы</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Основной контент -->
+            <div class="col-lg-9 mb-4">
+                <div class="main-content">
+                    <h2 class="mb-4">Наши продукты</h2>
+                    
+                    <p class="fs-5 mb-4">
+                        Портфель программных продуктов «Галактика» включает полнофункциональную ERP-систему корпоративного класса, программные продукты по управлению кадрами и расчету заработной платы, управлению эффективностью производственных активов и управлению производством на промышленных предприятиях.
+                    </p>
+
+                    <!-- Сетка продуктов -->
+                    <div class="row">
+                        <!-- Продукт 1 -->
+                        <div class="col-md-6 mb-4">
+                            <div class="product-card">
+                                <img src="../images/erp.png" alt="Галактика ERP" class="catalog-product-image img-fluid">
+                                <div class="product-title">Галактика ERP</div>
+                                <p class="mb-3">Комплексная система управления предприятием</p>
+                                <a href="ERPpage.html" class="btn btn-primary">Подробнее</a>
+                            </div>
+                        </div>
+                        
+                        <!-- Продукт 2 -->
+                        <div class="col-md-6 mb-4">
+                            <div class="product-card">
+                                <img src="../images/erphr.png" alt="Галактика ERP HR" class="catalog-product-image img-fluid">
+                                <div class="product-title">Галактика ERP HR</div>
+                                <p class="mb-3">Управление персоналом и расчет заработной платы</p>
+                                <a href="ERPHRpage.html" class="btn btn-primary">Подробнее</a>
+                            </div>
+                        </div>
+                        
+                        <!-- Продукт 3 -->
+                        <div class="col-md-6 mb-4">
+                            <div class="product-card">
+                                <img src="../images/eam.png" alt="Галактика EAM" class="catalog-product-image img-fluid">
+                                <div class="product-title">Галактика EAM</div>
+                                <p class="mb-3">Управление основными фондами и активами</p>
+                                <a href="EAMPpage.html" class="btn btn-primary">Подробнее</a>
+                            </div>
+                        </div>
+                        
+                        <!-- Продукт 4 -->
+                        <div class="col-md-6 mb-4">
+                            <div class="product-card">
+                                <img src="../images/mes.png" alt="Галактика MES" class="catalog-product-image img-fluid">
+                                <div class="product-title">Галактика MES</div>
+                                <p class="mb-3">Управление производственными процессами</p>
+                                <a href="MESpage.html" class="btn btn-primary">Подробнее</a>
+                            </div>
+                        </div>
+
+
+                        <!-- Дополнительная информация -->
+                        <div class="mt-5">
+                            <h3 class="mb-4">Преимущества наших решений</h3>
+                            <div class="row">
+                                <div class="col-md-4 mb-3">
+                                    <div class="text-center">
+                                        
+                                        <img src = "../images/corp.png">
+                                        <h5>Для крупных предприятий</h5>
+                                        <p class="small">Масштабируемые решения для корпораций</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    <div class="text-center">
+                                       
+                                        <img src = "../images/lock.png">
+                                        <h5>Безопасность</h5>
+                                        <p class="small">Соответствие требованиям ФСТЭК</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    <div class="text-center">
+                                        
+                                        <img src = "../images/sync.png">
+                                        <h5>Интеграция</h5>
+                                        <p class="small">Готовность к интеграции с другими системами</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Футер -->
+    <footer class="footer">
+        <div class="container text-center">
+            <p class="mb-0">&copy; 2025 Галактика. Все права защищены.</p>
+        </div>
+    </footer>
+
+       <!-- Модальное окно входа/регистрации -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="loginModalLabel">Вход / Регистрация</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <!-- Форма входа -->
+                <div id="loginForm">
+                    <form>
+                        <div class="mb-3">
+                            <label for="login" class="form-label">Логин</label>
+                            <input type="text" class="form-control" id="login" placeholder="Введите ваш логин">
+                        </div>
+                        <div class="mb-3">
+                            <label for="password" class="form-label">Пароль</label>
+                            <input type="password" class="form-control" id="password" placeholder="Введите ваш пароль">
+                        </div>
+                        <div class="d-grid gap-2">
+                            <button type="submit" class="btn btn-primary">Войти</button>
+                            <button type="button" class="btn btn-outline-secondary" onclick="showRegistrationForm()">Зарегистрироваться</button>
+                        </div>
+                        <div class="text-center mt-3">
+                            <a href="#" class="text-decoration-none">Забыли пароль?</a>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Форма регистрации (изначально скрыта) -->
+                <div id="registrationForm" style="display: none;">
+                    <form>
+                        <div class="mb-3">
+                            <label for="regEmail" class="form-label">Почта</label>
+                            <input type="email" class="form-control" id="regEmail" placeholder="Введите вашу почту">
+                        </div>
+                        <div class="mb-3">
+                            <label for="regLogin" class="form-label">Логин</label>
+                            <input type="text" class="form-control" id="regLogin" placeholder="Придумайте логин">
+                        </div>
+                        <div class="mb-3">
+                            <label for="regPassword" class="form-label">Пароль</label>
+                            <input type="password" class="form-control" id="regPassword" placeholder="Придумайте пароль">
+                        </div>
+                        <div class="mb-3">
+                            <label for="regPasswordConfirm" class="form-label">Повторите пароль</label>
+                            <input type="password" class="form-control" id="regPasswordConfirm" placeholder="Повторите пароль">
+                        </div>
+                        
+                        <!-- Чекбокс согласия -->
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="privacyAgreement" required>
+                            <label class="form-check-label" for="privacyAgreement">
+                                Я подтверждаю согласие на обработку персональных данных
+                            </label>
+                        </div>
+                        
+                        <div class="d-grid gap-2">
+                            <button type="submit" class="btn btn-primary">Зарегистрироваться</button>
+                            <button type="button" class="btn btn-outline-secondary" onclick="showLoginForm()">Назад ко входу</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+	<script src="../js/bootstrap.bundle.min.js"></script>
+     <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Функции для переключения между формами входа и регистрации
+            window.showRegistrationForm = function() {
+                document.getElementById('loginForm').style.display = 'none';
+                document.getElementById('registrationForm').style.display = 'block';
+            }
+            
+            window.showLoginForm = function() {
+                document.getElementById('registrationForm').style.display = 'none';
+                document.getElementById('loginForm').style.display = 'block';
+            }
+            
+            // Функция для переключения контекстного меню
+            window.toggleContextMenu = function() {
+                const menu = document.getElementById('contextMenu');
+                menu.classList.toggle('show');
+            }
+
+            // Закрытие меню при клике вне его области
+            document.addEventListener('click', function(event) {
+                const menu = document.getElementById('contextMenu');
+                const button = document.querySelector('.context-menu-btn');
+                
+                if (!menu.contains(event.target) && !button.contains(event.target)) {
+                    menu.classList.remove('show');
+                }
+            });
+
+            // Закрытие меню при нажатии Escape
+            document.addEventListener('keydown', function(event) {
+                if (event.key === 'Escape') {
+                    const menu = document.getElementById('contextMenu');
+                    menu.classList.remove('show');
+                }
+            });
+
+            // Обновление активного пункта меню
+            document.querySelectorAll('.context-menu-item').forEach(item => {
+                item.addEventListener('click', function() {
+                    // Убираем активный класс у всех пунктов
+                    document.querySelectorAll('.context-menu-item').forEach(i => {
+                        i.classList.remove('active');
+                    });
+                    // Добавляем активный класс к текущему пункту
+                    this.classList.add('active');
+                    // Закрываем меню после клика
+                    document.getElementById('contextMenu').classList.remove('show');
+                });
+            });
+            
+            // Гарантируем, что модальное окно скрыто при загрузке
+            var loginModal = document.getElementById('loginModal');
+            if (loginModal) {
+                loginModal.style.display = 'none';
+                loginModal.classList.remove('show');
+            }
+        });
+    </script>
+</body>
+</html>

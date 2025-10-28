@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Contacts</title>
+	<link href="../css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="../css/styles.css">
+</head>
+<body>
+	 <!-- Шапка сайта -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <div class="navbar-brand d-flex align-items-center">
+    			<img src="../images/label.png" alt="Галактика" class="me-2">
+    			<a href="../index.html" class="fw-bold text-decoration-none text-white">ГАЛАКТИКА</a>
+			</div>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://galaktika.ru/?ysclid=mhaj4ts298452292586">Официальный сайт</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://galaktika.ru/partners">Партнерам</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://galaktika.ru/uslugi">Заказчикам</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://sem.galaktika.ru/">Семинары</a>
+                    </li>
+                </ul>
+                
+                <!-- Кнопка входа/регистрации -->
+                <button class="btn btn-outline-light login-modal-btn" type="button" data-bs-toggle="modal" data-bs-target="#loginModal">
+                    Вход / Регистрация
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Заголовок страницы -->
+    <header class="hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-8">
+                    <h1 class="display-4 fw-bold">КОНТАКТЫ</h1>
+                    <p class="lead">Свяжитесь с нами для получения дополнительной информации</p>
+                </div>
+                <!-- <div class="col-md-4 text-center">
+                    <img src="../images/main1.png" alt="Галактика" class="img-fluid" style="max-height: 150px;">
+                </div> -->
+            </div>
+        </div>
+    </header>
+
+    <!-- Основное содержимое -->
+    <main class="container">
+        <div class="row">
+            <!-- Колонка с меню -->
+            <div class="col-lg-3 mb-4">
+                <div class="menu-column">
+                    <!-- Кнопка для открытия контекстного меню -->
+                    <button class="context-menu-btn" onclick="toggleContextMenu()">
+                        <div class="hamburger-icon">
+                            <div class="hamburger-line"></div>
+                            <div class="hamburger-line"></div>
+                            <div class="hamburger-line"></div>
+                        </div>
+                    </button>
+
+                    <!-- Контекстное меню -->
+                    <div class="context-menu" id="contextMenu">
+                        <div class="context-menu-header">Навигация</div>
+                        <a href="../index.html" class="context-menu-item">Главная</a>
+                        <a href="page1.html" class="context-menu-item">О нас</a>
+                        <a href="page2.html" class="context-menu-item">Каталог</a>
+                        <a href="page3.html" class="context-menu-item active">Контакты</a>
+                        <a href="reviews.html" class="context-menu-item">Отзывы</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Основной контент -->
+            <div class="col-lg-9 mb-4">
+                <div class="content-section">
+                    <h2 class="mb-4">Контактная информация</h2>
+                    
+                    <!-- Контактные данные -->
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="contact-card">
+                                <h4 class="mb-3">Основные контакты</h4>
+                                <ul class="contact-info">
+                                    <li class="d-flex align-items-center">
+                                        <img src="../images/phone.png">
+                                        
+                                        <strong>Телефон:</strong> +7 495 252-02-55
+                                    </li>
+                                    <li class="d-flex align-items-center">
+                                        <img src="../images/email.png">
+                                        
+                                        <strong>Email:</strong> market@galaktika.ru
+                                    </li>
+                                    <li class="d-flex align-items-center">
+                                        <img src="../images/address.png">
+                                        
+                                        <strong>Адрес:</strong> 125167, Россия, Москва, Театральная аллея, 3с1
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-6">
+                            <div class="contact-card">
+                                <h4 class="mb-3">Реквизиты компании</h4>
+                                <ul class="contact-info">
+                                    <li class="d-flex align-items-center">
+                                        <img src="../images/doc.png">
+                                        
+                                        <strong>ОГРН:</strong> 1027739341520
+                                    </li>
+                                    <li class="d-flex align-items-center">
+                                        <img src="../images/doc.png">
+                                        
+                                        <strong>ИНН:</strong> 7707140573
+                                    </li>
+                                    <li class="d-flex align-items-center">
+                                        <img src="../images/value.png">
+                                        
+                                        <strong>ОКВЭД:</strong> 62.01 (основной)
+                                    </li>
+                                    <li class="d-flex align-items-center">
+                                        <img src="../images/building.png">
+                                       
+                                        <strong>Название:</strong> АО «Корпорация Галактика»
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Карта -->
+                    <div class="mt-4">
+                        <h4 class="mb-3">Наше местоположение</h4>
+                        <div class="map-container">
+                            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A74b6db37284ac5bbac98e6d217557db666833d98338c977cb800d788a4cb1465&amp;width=100%&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
+                        </div>
+                    </div>
+
+                    <!-- Дополнительная информация -->
+                    <div class="row mt-5">
+                        <div class="col-md-4 mb-3">
+                            <div class="text-center">
+                                <img src="../images/clock.png">
+                                
+                                <h5>Время работы</h5>
+                                <p>Пн-Пт: 9:00 - 18:00<br>Сб-Вс: выходной</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <div class="text-center">
+                                <img src="../images/www.png">
+                                
+                                <h5>Официальный сайт</h5>
+                                <p><a href="https://galaktika.ru" class="text-decoration-none">galaktika.ru</a></p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <div class="text-center">
+                                <img src="../images/bag.png">
+                               
+                                <h5>Для бизнеса</h5>
+                                <p>Коммерческие предложения и партнерство</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Форма обратной связи -->
+                    <div class="mt-5">
+                        <h4 class="mb-3">Форма обратной связи</h4>
+                        <div class="contact-card">
+                            <form>
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <label for="name" class="form-label">Ваше имя</label>
+                                        <input type="text" class="form-control" id="name" placeholder="Введите ваше имя">
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label for="email" class="form-label">Email</label>
+                                        <input type="email" class="form-control" id="email" placeholder="Введите ваш email">
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="subject" class="form-label">Тема сообщения</label>
+                                    <input type="text" class="form-control" id="subject" placeholder="Тема сообщения">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="message" class="form-label">Сообщение</label>
+                                    <textarea class="form-control" id="message" rows="4" placeholder="Введите ваше сообщение"></textarea>
+                                </div>
+
+								<!-- Чекбокс согласия для формы обратной связи -->
+            					<div class="mb-3 form-check">
+                				<input type="checkbox" class="form-check-input" id="feedbackPrivacyAgreement" required>
+                				<label class="form-check-label" for="feedbackPrivacyAgreement">
+                    				Я подтверждаю согласие на обработку персональных данных
+                				</label>
+           					 	</div>
+			
+                                <button type="submit" class="btn btn-primary">Отправить сообщение</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Футер -->
+    <footer class="footer">
+        <div class="container text-center">
+            <p class="mb-0">&copy; 2025 Галактика. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <!-- Модальное окно входа/регистрации -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="loginModalLabel">Вход / Регистрация</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <!-- Форма входа -->
+                <div id="loginForm">
+                    <form>
+                        <div class="mb-3">
+                            <label for="login" class="form-label">Логин</label>
+                            <input type="text" class="form-control" id="login" placeholder="Введите ваш логин">
+                        </div>
+                        <div class="mb-3">
+                            <label for="password" class="form-label">Пароль</label>
+                            <input type="password" class="form-control" id="password" placeholder="Введите ваш пароль">
+                        </div>
+                        <div class="d-grid gap-2">
+                            <button type="submit" class="btn btn-primary">Войти</button>
+                            <button type="button" class="btn btn-outline-secondary" onclick="showRegistrationForm()">Зарегистрироваться</button>
+                        </div>
+                        <div class="text-center mt-3">
+                            <a href="#" class="text-decoration-none">Забыли пароль?</a>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Форма регистрации (изначально скрыта) -->
+                <div id="registrationForm" style="display: none;">
+                    <form>
+                        <div class="mb-3">
+                            <label for="regEmail" class="form-label">Почта</label>
+                            <input type="email" class="form-control" id="regEmail" placeholder="Введите вашу почту">
+                        </div>
+                        <div class="mb-3">
+                            <label for="regLogin" class="form-label">Логин</label>
+                            <input type="text" class="form-control" id="regLogin" placeholder="Придумайте логин">
+                        </div>
+                        <div class="mb-3">
+                            <label for="regPassword" class="form-label">Пароль</label>
+                            <input type="password" class="form-control" id="regPassword" placeholder="Придумайте пароль">
+                        </div>
+                        <div class="mb-3">
+                            <label for="regPasswordConfirm" class="form-label">Повторите пароль</label>
+                            <input type="password" class="form-control" id="regPasswordConfirm" placeholder="Повторите пароль">
+                        </div>
+                        
+                        <!-- Чекбокс согласия -->
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="privacyAgreement" required>
+                            <label class="form-check-label" for="privacyAgreement">
+                                Я подтверждаю согласие на обработку персональных данных
+                            </label>
+                        </div>
+                        
+                        <div class="d-grid gap-2">
+                            <button type="submit" class="btn btn-primary">Зарегистрироваться</button>
+                            <button type="button" class="btn btn-outline-secondary" onclick="showLoginForm()">Назад ко входу</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<script src="../js/bootstrap.bundle.min.js"></script>
+<script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Функции для переключения между формами входа и регистрации
+            window.showRegistrationForm = function() {
+                document.getElementById('loginForm').style.display = 'none';
+                document.getElementById('registrationForm').style.display = 'block';
+            }
+            
+            window.showLoginForm = function() {
+                document.getElementById('registrationForm').style.display = 'none';
+                document.getElementById('loginForm').style.display = 'block';
+            }
+            
+            // Функция для переключения контекстного меню
+            window.toggleContextMenu = function() {
+                const menu = document.getElementById('contextMenu');
+                menu.classList.toggle('show');
+            }
+
+            // Закрытие меню при клике вне его области
+            document.addEventListener('click', function(event) {
+                const menu = document.getElementById('contextMenu');
+                const button = document.querySelector('.context-menu-btn');
+                
+                if (!menu.contains(event.target) && !button.contains(event.target)) {
+                    menu.classList.remove('show');
+                }
+            });
+
+            // Закрытие меню при нажатии Escape
+            document.addEventListener('keydown', function(event) {
+                if (event.key === 'Escape') {
+                    const menu = document.getElementById('contextMenu');
+                    menu.classList.remove('show');
+                }
+            });
+
+            // Обновление активного пункта меню
+            document.querySelectorAll('.context-menu-item').forEach(item => {
+                item.addEventListener('click', function() {
+                    // Убираем активный класс у всех пунктов
+                    document.querySelectorAll('.context-menu-item').forEach(i => {
+                        i.classList.remove('active');
+                    });
+                    // Добавляем активный класс к текущему пункту
+                    this.classList.add('active');
+                    // Закрываем меню после клика
+                    document.getElementById('contextMenu').classList.remove('show');
+                });
+            });
+            
+            // Гарантируем, что модальное окно скрыто при загрузке
+            var loginModal = document.getElementById('loginModal');
+            if (loginModal) {
+                loginModal.style.display = 'none';
+                loginModal.classList.remove('show');
+            }
+        });
+    </script>
+</body>
+</html>
